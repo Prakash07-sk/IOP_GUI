@@ -1,0 +1,19 @@
+{
+  "name": "iop_gui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "api-gateway": "node ./api-gateway/server.js",
+    "iop-api": "node ./iop_api/server.js",
+    "webapp": " cd ./webapp && npm run-script start",
+    "start": "concurrently --kill-others \"npm run api-gateway\" \"npm run iop-api\" \"npm run webapp\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

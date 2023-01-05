@@ -1,0 +1,13 @@
+{
+    "host": "http://localhost",
+    "iop": {
+        "api": "iop_api",
+        "port": "8095",
+        "url": "http://localhost:8095/"
+    },
+    "webapp": {
+        "api": "webapp",
+        "port": "3000",
+        "url": "http://localhost:3000/"
+    }
+}
