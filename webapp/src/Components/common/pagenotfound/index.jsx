@@ -1,16 +1,13 @@
 
-import "./style.css";
+import Container from "react-bootstrap/esm/Container";
+import "./style.scss";
 export const PageNotFound = () => {
     return (
         <>
-            <div className="error-page-wrap">
-                <article className="error-page gradient">
-                    <hgroup>
-                        <h1>404</h1>
-                        <h2>oops! page not found</h2>
-                    </hgroup>
-                </article>
-            </div>
+            <Container className="mt-5">
+                <h1>404</h1>
+                <p>Oops!Page Not Found.</p>
+            </Container>
         </>
     )
 }
